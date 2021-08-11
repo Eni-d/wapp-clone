@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(25, 26, 25);
+  color: rgb(240, 222, 222);
+  font-family: Nunito;
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  margin: 0;
+}
+header {
+  background-color: rgb(38, 41, 38);
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-bottom: 0;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+#modal {
+  width: 300px;
+  height: 300px;
+  border-radius: 0px;
+  margin-left: inherit;
+  margin-right: inherit;
+}
+.modal {
+  position: fixed; /* or absolute */
+  top: 20%;
+  left: 30%;
+}
+.container {
+  display: flex;
+}
+h3 {
+  font-style: oblique;
+  font-size: larger;
+  margin-right: 50px;
+}
+#overlay {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: black;
+  opacity: 0;
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    position: fixed; /* or absolute */
+    top: 20%;
+    left: 20%;
+  }
+}
+
+@media (min-width: 900px) {
+  .modal {
+    position: fixed; /* or absolute */
+    top: 20%;
+    left: 40%
+    hr{
+       height: 1px;
+        background-color: #ccc;
+        border: none;
+    }
